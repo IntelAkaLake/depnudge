@@ -1,0 +1,142 @@
+{
+    "banner": {
+        "welcome": "",
+        "subtitle": ""
+    },
+    "scan": {
+        "scanning": "",
+        "none_found": "",
+        "found": "",
+        "tip_install": "",
+        "tip_scan": "",
+        "no_files": "",
+        "error_generic": "",
+        "error_reading_package_json": "",
+        "package_list_item": ""
+    },
+    "install": {
+        "scanning": "",
+        "success": "",
+        "none_found": "",
+        "package_success": "",
+        "package_not_found": ""
+    },
+    "backup": {
+        "created": "",
+        "could_not_create": ""
+    },
+    "update": {
+        "checking": "",
+        "checking_specific": "",
+        "all_up_to_date": "",
+        "some_up_to_date": "",
+        "outdated_found": "",
+        "updating": "",
+        "done": "",
+        "test_reminder": "",
+        "parse_error": "",
+        "error_checking_packages": "",
+        "make_sure_packages_correct": "",
+        "error_checking_outdated": "",
+        "package_json_not_found": "",
+        "make_sure_node_project": "",
+        "error_reading_package_json": "",
+        "packages_not_found": "",
+        "available_packages": "",
+        "updated_package": "",
+        "updated_package_dev": "",
+        "updated_package_peer": "",
+        "updated_package_optional": "",
+        "successfully_updated": "",
+        "error_writing_package_json": "",
+        "run_npm_install": "",
+        "skipped_npm_install": "",
+        "installing_packages": "",
+        "packages_updated_successfully": "",
+        "installation_failed": "",
+        "run_npm_install_manually": "",
+        "package_version": ""
+    },
+    "progress": {
+        "scanning_files": "",
+        "scanning_file": "",
+        "scanned_files": "",
+        "fetching_package_info": "",
+        "checking_package": "",
+        "package_info_fetched": "",
+        "updating_package_json": "",
+        "updating_package": "",
+        "updated_packages": "",
+        "packages_checked_successfully": "",
+        "checking_for_outdated_packages": "",
+        "default_complete": "",
+        "default_failed": "",
+        "default_loading": ""
+    },
+    "help": {
+        "header": "",
+        "usage": "",
+        "options": "",
+        "examples": "",
+        "usage_example": "",
+        "help_option": "",
+        "version_option": "",
+        "check_option": "",
+        "scan_option": "",
+        "install_option": "",
+        "yes_option": "",
+        "lang_option": "",
+        "example_check": "",
+        "example_check_only": "",
+        "example_scan": "",
+        "example_install": "",
+        "example_specific": "",
+        "example_yes": "",
+        "example_lang": "",
+        "current_language": "",
+        "current_language_default": ""
+    },
+    "general": {
+        "cancelled": "",
+        "error": "",
+        "confirm_update": "",
+        "confirm_install": "",
+        "confirm_type": "",
+        "invalid_choice": "",
+        "language_set": "",
+        "language_remembered": ""
+    },
+    "menu": {
+        "what_to_do": "",
+        "update_all": "",
+        "select_specific": "",
+        "cancel_exit": "",
+        "enter_choice": "",
+        "enter_packages": "",
+        "packages_to_update": "",
+        "ignoring_invalid": "",
+        "no_valid_packages": ""
+    },
+    "language": {
+        "info_header": "",
+        "current_language": "",
+        "saved_preference": "",
+        "no_saved_preference": "",
+        "supported_languages": "",
+        "change_language": "",
+        "auto_save": ""
+    },
+    "main": {
+        "use_without_check": "",
+        "no_packages_updated": "",
+        "no_valid_packages_found": ""
+    },
+    "bin": {
+        "uncaught_exception": "",
+        "stack_trace": "",
+        "unhandled_rejection": "",
+        "promise": "",
+        "goodbye": "",
+        "fatal_error": ""
+    }
+}

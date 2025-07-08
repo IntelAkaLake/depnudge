@@ -1,0 +1,138 @@
+{
+    "banner": {
+        "welcome": "🚀 DepNudge 🚀",
+        "subtitle": "¡Mantén tus dependencias actualizadas!"
+    },
+    "scan": {
+        "scanning": "Escaneando dependencias no definidas...",
+        "none_found": "¡No se encontraron dependencias no definidas!",
+        "found": "Se encontraron {count} dependencias no definidas:",
+        "tip_install": "Usa 'depnudge --install' para instalar estos paquetes.",
+        "tip_scan": "💡 Consejo: Usa 'depnudge --scan' para buscar paquetes usados en tu código pero no en package.json",
+        "no_files": "⚠️  No se encontraron archivos JavaScript/TypeScript para escanear",
+        "error_generic": "❌ Error: {error}",
+        "error_reading_package_json": "❌ Error al leer package.json: {error}"
+    },
+    "install": {
+        "scanning": "Escaneando e instalando dependencias no definidas...",
+        "success": "¡{count} paquetes instalados exitosamente!",
+        "none_found": "¡No se encontraron dependencias no definidas!"
+    },
+    "update": {
+        "checking": "Comprobando todas las dependencias para actualizaciones...",
+        "checking_specific": "Comprobando paquetes específicos: {packages}",
+        "all_up_to_date": "¡Todos los paquetes están actualizados!",
+        "some_up_to_date": "Los paquetes especificados están actualizados: {packages}",
+        "outdated_found": "Se encontraron {count} paquete(s) desactualizado(s):",
+        "updating": "Actualizando paquetes...",
+        "done": "¡Listo! Tus paquetes están actualizados.",
+        "test_reminder": "Recuerda probar tu aplicación para asegurarte de que todo funcione correctamente.",
+        "parse_error": "Error de análisis: {error}",
+        "error_checking_packages": "❌ Error comprobando paquetes: {packages}",
+        "make_sure_packages_correct": "Asegúrate de que los nombres de los paquetes sean correctos y existan en tu package.json",
+        "error_checking_outdated": "❌ Error comprobando paquetes desactualizados: {error}",
+        "package_json_not_found": "❌ package.json no encontrado en el directorio actual",
+        "make_sure_node_project": "Asegúrate de estar en un proyecto Node.js con un archivo package.json",
+        "error_reading_package_json": "❌ Error al leer package.json: {error}",
+        "packages_not_found": "❌ Los siguientes paquetes no se encuentran en package.json:",
+        "available_packages": "Paquetes disponibles:",
+        "updated_package": "✅ Actualizado {pkg}: {current} → {new}",
+        "updated_package_dev": "✅ Actualizado {pkg} (dev): {current} → {new}",
+        "updated_package_peer": "✅ Actualizado {pkg} (peer): {current} → {new}",
+        "updated_package_optional": "✅ Actualizado {pkg} (optional): {current} → {new}",
+        "successfully_updated": "📦 package.json actualizado exitosamente con {count} paquete(s).",
+        "error_writing_package_json": "❌ Error escribiendo package.json: {error}",
+        "run_npm_install": "🔄 ¿Ejecutar 'npm install' para actualizar node_modules? (y/N): ",
+        "skipped_npm_install": "ℹ️  Instalación de npm omitida. Ejecuta \"npm install\" manualmente cuando estés listo.",
+        "installing_packages": "Instalando paquetes actualizados...",
+        "packages_updated_successfully": "🎉 ¡Paquetes actualizados exitosamente!",
+        "installation_failed": "Instalación fallida: {error}",
+        "run_npm_install_manually": "Puede que necesites ejecutar \"npm install\" manualmente."
+    },
+    "progress": {
+        "scanning_files": "Escaneando archivos...",
+        "scanning_file": "Escaneando {file}...",
+        "scanned_files": "{count} archivos escaneados",
+        "fetching_package_info": "Obteniendo información de paquetes...",
+        "checking_package": "Comprobando {pkg}...",
+        "package_info_fetched": "Información de paquetes obtenida",
+        "updating_package_json": "Actualizando package.json...",
+        "updating_package": "Actualizando {pkg}...",
+        "updated_packages": "{count} paquetes actualizados en package.json",
+        "packages_checked_successfully": "¡Paquetes comprobados exitosamente!",
+        "checking_for_outdated_packages": "Comprobando paquetes desactualizados...",
+        "default_complete": "¡Completado!",
+        "default_failed": "¡Fallido!",
+        "default_loading": "Cargando..."
+    },
+    "help": {
+        "header": "DepNudge - Actualiza tus dependencias de Node.js a la última versión",
+        "usage": "Uso:",
+        "options": "Opciones:",
+        "examples": "Ejemplos:",
+        "usage_example": "depnudge [opciones] [paquetes...]",
+        "help_option": "-h, --help          Muestra este mensaje de ayuda",
+        "version_option": "-v, --version       Muestra el número de versión",
+        "check_option": "-c, --check         Solo comprobar paquetes desactualizados (no actualizar)",
+        "scan_option": "-s, --scan          Escanear código para dependencias no definidas",
+        "install_option": "-i, --install       Instalar dependencias no definidas encontradas en el código",
+        "yes_option": "-y, --yes           Omitir confirmaciones (auto-confirmar)",
+        "lang_option": "-l, --lang          Establecer idioma ({langs}) - guarda preferencia",
+        "example_check": "depnudge                    # Comprobar paquetes desactualizados",
+        "example_check_only": "depnudge --check            # Solo mostrar paquetes desactualizados",
+        "example_scan": "depnudge --scan             # Escanear dependencias no definidas",
+        "example_install": "depnudge --install          # Encontrar e instalar dependencias no definidas",
+        "example_specific": "depnudge axios lodash       # Actualizar paquetes específicos",
+        "example_yes": "depnudge axios --yes        # Actualizar axios sin confirmación",
+        "example_lang": "depnudge --lang {lang}          # Cambiar idioma (guarda preferencia)",
+        "current_language": "Idioma actual: {current} (preferencia guardada: {saved})",
+        "current_language_default": "Idioma actual: {current} (predeterminado)"
+    },
+    "general": {
+        "cancelled": "Cancelado. No se realizaron cambios.",
+        "error": "Error: {message}",
+        "confirm_update": "¿Deseas actualizar estos paquetes? (y/N): ",
+        "confirm_install": "¿Instalar {count} paquetes? (y/N): ",
+        "confirm_type": "¿Instalar como dependencias (d) o devDependencies (dev)? (d/dev): ",
+        "invalid_choice": "Opción no válida. Saliendo...",
+        "language_set": "Idioma establecido a: {lang}",
+        "language_remembered": "Esta preferencia se recordará para el futuro"
+    },
+    "menu": {
+        "what_to_do": "¿Qué te gustaría hacer?",
+        "update_all": "Actualizar todos los paquetes",
+        "select_specific": "Seleccionar paquetes específicos para actualizar",
+        "cancel_exit": "Cancelar y salir",
+        "enter_choice": "Ingresa tu elección (u/s/c): ",
+        "enter_packages": "Ingresa los nombres de los paquetes separados por espacios (o 'all' para todos los paquetes):",
+        "packages_to_update": "Paquetes a actualizar: ",
+        "ignoring_invalid": "⚠️  Ignorando paquetes no válidos: {packages}",
+        "no_valid_packages": "❌ No se seleccionaron paquetes válidos. Saliendo..."
+    },
+    "language": {
+        "info_header": "Información de idioma",
+        "current_language": "Idioma actual: {lang}",
+        "saved_preference": "Preferencia guardada: {lang}",
+        "no_saved_preference": "Preferencia guardada: Ninguna (usando predeterminado)",
+        "supported_languages": "Idiomas soportados:",
+        "change_language": "Usa 'depnudge --lang <idioma>' para cambiar el idioma",
+        "auto_save": "La preferencia de idioma se guarda automáticamente"
+    },
+    "main": {
+        "use_without_check": "💡 Usa 'depnudge' sin --check para actualizar estos paquetes.",
+        "no_packages_updated": "ℹ️  No se actualizaron paquetes en package.json",
+        "no_valid_packages_found": "⚠️  No se encontraron paquetes válidos para instalar"
+    },
+    "backup": {
+        "created": "💾 Copia de seguridad creada: package.json.backup",
+        "could_not_create": "⚠️  No se pudo crear la copia de seguridad: {error}"
+    },
+    "bin": {
+        "uncaught_exception": "💥 Excepción no controlada:",
+        "stack_trace": "Rastreo de pila:",
+        "unhandled_rejection": "💥 Rechazo no controlado:",
+        "promise": "Promesa:",
+        "goodbye": "👋 ¡Adiós! Operación cancelada por el usuario.",
+        "fatal_error": "💥 Error fatal: {message}"
+    }
+}

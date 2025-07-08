@@ -1,0 +1,41 @@
+{
+  "name": "depnudge",
+  "version": "1.0.0",
+  "description": "🚀 Advanced NPM package manager with intelligent updates, security scanning, and dependency optimization",
+  "main": "bin/depnudge.js",
+  "bin": {
+    "depnudge": "./bin/depnudge.js"
+  },
+  "keywords": [
+    "npm",
+    "package-manager",
+    "dependencies",
+    "update",
+    "security",
+    "audit",
+    "cli",
+    "tool",
+    "package-update",
+    "dependency-manager"
+  ],
+  "author": "IntelAkaLake",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IntelAkaLake/depnudge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IntelAkaLake/depnudge/issues"
+  },
+  "homepage": "https://github.com/IntelAkaLake/depnudge#readme",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "lib/",
+    "bin/"
+  ],
+  "preferGlobal": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}

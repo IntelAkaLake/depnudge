@@ -1,0 +1,142 @@
+{
+  "banner": {
+    "welcome": "🚀 DepNudge 🚀",
+    "subtitle": "Keep your dependencies fresh!"
+  },
+  "scan": {
+    "scanning": "Scanning for undefined dependencies...",
+    "none_found": "No undefined dependencies found!",
+    "found": "Found {count} undefined dependencies:",
+    "tip_install": "Use 'depnudge --install' to install these packages.",
+    "tip_scan": "💡 Tip: Use 'depnudge --scan' to check for packages used in your code but not in package.json",
+    "no_files": "⚠️  No JavaScript/TypeScript files found to scan",
+    "error_generic": "❌ Error: {error}",
+    "error_reading_package_json": "❌ Error reading package.json: {error}",
+    "package_list_item": "- {pkg}"
+  },
+  "install": {
+    "scanning": "Scanning and installing undefined dependencies...",
+    "success": "Successfully installed {count} packages!",
+    "none_found": "No undefined dependencies found!",
+    "package_success": "{pkg}@{version}",
+    "package_not_found": "{pkg} (not found on npm)"
+  },
+  "backup": {
+    "created": "💾 Created backup: package.json.backup",
+    "could_not_create": "⚠️  Could not create backup: {error}"
+  },
+  "update": {
+    "checking": "Checking all packages for updates...",
+    "checking_specific": "Checking specific packages: {packages}",
+    "all_up_to_date": "All packages are up to date!",
+    "some_up_to_date": "Specified packages are up to date: {packages}",
+    "outdated_found": "Found {count} outdated package(s):",
+    "updating": "Updating packages...",
+    "done": "All done! Your packages are now up to date.",
+    "test_reminder": "Remember to test your application to ensure everything works correctly.",
+    "parse_error": "Parse error: {error}",
+    "error_checking_packages": "❌ Error checking packages: {packages}",
+    "make_sure_packages_correct": "Make sure the package names are correct and exist in your package.json",
+    "error_checking_outdated": "❌ Error checking outdated packages: {error}",
+    "package_json_not_found": "❌ package.json not found in current directory",
+    "make_sure_node_project": "Make sure you're in a Node.js project directory with a package.json file",
+    "error_reading_package_json": "❌ Error reading package.json: {error}",
+    "packages_not_found": "❌ The following packages are not found in package.json:",
+    "available_packages": "Available packages:",
+    "updated_package": "✅ Updated {pkg}: {current} → {new}",
+    "updated_package_dev": "✅ Updated {pkg} (dev): {current} → {new}",
+    "updated_package_peer": "✅ Updated {pkg} (peer): {current} → {new}",
+    "updated_package_optional": "✅ Updated {pkg} (optional): {current} → {new}",
+    "successfully_updated": "📦 Successfully updated package.json with {count} package(s).",
+    "error_writing_package_json": "❌ Error writing package.json: {error}",
+    "run_npm_install": "🔄 Run 'npm install' to update node_modules? (y/N): ",
+    "skipped_npm_install": "ℹ️  Skipped npm install. Run \"npm install\" manually when ready.",
+    "installing_packages": "Installing updated packages...",
+    "packages_updated_successfully": "🎉 Packages updated successfully!",
+    "installation_failed": "Installation failed: {error}",
+    "run_npm_install_manually": "You may need to run \"npm install\" manually.",
+    "package_version": "{pkg}: {current} → {latest}"
+  },
+  "progress": {
+    "scanning_files": "Scanning files...",
+    "scanning_file": "Scanning {file}...",
+    "scanned_files": "Scanned {count} files",
+    "fetching_package_info": "Fetching package info...",
+    "checking_package": "Checking {pkg}...",
+    "package_info_fetched": "Package info fetched",
+    "updating_package_json": "Updating package.json...",
+    "updating_package": "Updating {pkg}...",
+    "updated_packages": "Updated {count} package(s) in package.json",
+    "packages_checked_successfully": "Packages checked successfully!",
+    "checking_for_outdated_packages": "Checking for outdated packages...",
+    "default_complete": "Complete!",
+    "default_failed": "Failed!",
+    "default_loading": "Loading..."
+  },
+  "help": {
+    "header": "DepNudge - Update your Node.js dependencies to their latest versions",
+    "usage": "Usage:",
+    "options": "Options:",
+    "examples": "Examples:",
+    "usage_example": "depnudge [options] [packages...]",
+    "help_option": "-h, --help          Show this help message",
+    "version_option": "-v, --version       Show version number",
+    "check_option": "-c, --check         Only check for outdated packages (don't update)",
+    "scan_option": "-s, --scan          Scan code for undefined dependencies",
+    "install_option": "-i, --install       Install undefined dependencies found in code",
+    "yes_option": "-y, --yes           Skip confirmation prompts (auto-confirm)",
+    "lang_option": "-l, --lang          Set language ({langs}) - saves preference",
+    "example_check": "depnudge                    # Check for outdated packages",
+    "example_check_only": "depnudge --check            # Only show outdated packages",
+    "example_scan": "depnudge --scan             # Scan for undefined dependencies",
+    "example_install": "depnudge --install          # Find and install undefined dependencies",
+    "example_specific": "depnudge axios lodash       # Update specific packages",
+    "example_yes": "depnudge axios --yes        # Update axios without confirmation",
+    "example_lang": "depnudge --lang {lang}          # Switch language (saves preference)",
+    "current_language": "Current language: {current} (saved preference: {saved})",
+    "current_language_default": "Current language: {current} (default)"
+  },
+  "general": {
+    "cancelled": "Cancelled. No changes made.",
+    "error": "Error: {message}",
+    "confirm_update": "Do you want to update these packages? (y/N): ",
+    "confirm_install": "Install {count} packages? (y/N): ",
+    "confirm_type": "Install as dependencies (d) or devDependencies (dev)? (d/dev): ",
+    "invalid_choice": "Invalid choice. Exiting...",
+    "language_set": "Language set to: {lang}",
+    "language_remembered": "This preference will be remembered for future use"
+  },
+  "menu": {
+    "what_to_do": "What would you like to do?",
+    "update_all": "Update all packages",
+    "select_specific": "Select specific packages to update",
+    "cancel_exit": "Cancel and exit",
+    "enter_choice": "Enter your choice (u/s/c): ",
+    "enter_packages": "Enter package names separated by spaces (or 'all' for all packages):",
+    "packages_to_update": "Packages to update: ",
+    "ignoring_invalid": "⚠️  Ignoring invalid packages: {packages}",
+    "no_valid_packages": "❌ No valid packages selected. Exiting..."
+  },
+  "language": {
+    "info_header": "Language Information",
+    "current_language": "Current language: {lang}",
+    "saved_preference": "Saved preference: {lang}",
+    "no_saved_preference": "Saved preference: None (using default)",
+    "supported_languages": "Supported languages:",
+    "change_language": "Use 'depnudge --lang <language>' to change language",
+    "auto_save": "Language preference is automatically saved"
+  },
+  "main": {
+    "use_without_check": "💡 Use 'depnudge' without --check to update these packages.",
+    "no_packages_updated": "ℹ️  No packages were updated in package.json",
+    "no_valid_packages_found": "⚠️  No valid packages found to install"
+  },
+  "bin": {
+    "uncaught_exception": "💥 Uncaught Exception:",
+    "stack_trace": "Stack trace:",
+    "unhandled_rejection": "💥 Unhandled Rejection:",
+    "promise": "Promise:",
+    "goodbye": "👋 Goodbye! Operation cancelled by user.",
+    "fatal_error": "💥 Fatal error: {message}"
+  }
+}
