@@ -12,11 +12,8 @@
 
 ## Installation
 
-Clone the repository and run npm install:
-
 ```sh
-git clone https://github.com/IntelAkaLake/depnudge.git
-npm install ./depnudge -g 
+npm install depnudge -g 
 ```
 
 ## Usage
