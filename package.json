@@ -1,6 +1,6 @@
 {
   "name": "depnudge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🚀 Advanced NPM package manager with intelligent updates, security scanning, and dependency optimization",
   "main": "bin/depnudge.js",
   "bin": {
