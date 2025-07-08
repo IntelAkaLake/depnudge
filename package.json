@@ -32,7 +32,8 @@
     "README.md",
     "LICENSE",
     "lib/",
-    "bin/"
+    "bin/",
+    "i18n/"
   ],
   "preferGlobal": true,
   "publishConfig": {
